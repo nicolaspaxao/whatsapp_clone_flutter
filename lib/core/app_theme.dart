@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 final class AppTheme {
   static bool useMaterial3 = true;
-  static Color colorSeed = Colors.greenAccent;
+  static Color colorSeed = const Color.fromARGB(255, 2, 255, 10);
 
   static ThemeData light() {
     return ThemeData(
       brightness: Brightness.light,
       useMaterial3: useMaterial3,
-      colorSchemeSeed: colorSeed,
+      colorScheme: ColorScheme.fromSeed(seedColor: colorSeed),
     );
   }
 
@@ -16,7 +16,7 @@ final class AppTheme {
     return ThemeData(
       brightness: Brightness.dark,
       useMaterial3: useMaterial3,
-      colorSchemeSeed: colorSeed,
+      colorSchemeSeed: ColorScheme.fromSeed(seedColor: colorSeed).primary,
     );
   }
 }
