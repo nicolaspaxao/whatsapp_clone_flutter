@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:whatsapp_clone/controllers/navigation_controller.dart';
+import 'package:whatsapp_clone/core/app_theme.dart';
 
 List<NavigationDestination> destinations = [
   NavigationDestination(
     tooltip: '',
     icon: Badge.count(
-      backgroundColor: Colors.green,
+      backgroundColor: AppTheme.colorSeed,
       count: 1000,
-      child: const Icon(Icons.chat_outlined),
+      child: const FaIcon(FontAwesomeIcons.comment),
     ),
     label: NavigationTabEnum.values[0].title,
     selectedIcon: Badge.count(
-      backgroundColor: Colors.green,
+      backgroundColor: AppTheme.colorSeed,
       count: 1000,
-      child: const Icon(Icons.chat),
+      child: const FaIcon(FontAwesomeIcons.solidComment),
     ),
   ),
   NavigationDestination(

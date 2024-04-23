@@ -9,6 +9,9 @@ final class AppTheme {
       brightness: Brightness.light,
       useMaterial3: useMaterial3,
       colorScheme: ColorScheme.fromSeed(seedColor: colorSeed),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        backgroundColor: colorSeed,
+      ),
     );
   }
 
@@ -17,6 +20,9 @@ final class AppTheme {
       brightness: Brightness.dark,
       useMaterial3: useMaterial3,
       colorSchemeSeed: ColorScheme.fromSeed(seedColor: colorSeed).primary,
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        backgroundColor: colorSeed,
+      ),
     );
   }
 }
